@@ -1,0 +1,90 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 75%;
+}
+body {
+    width: 100%;
+    background-color: #EBECED;
+    border: 1px solid #e2e2e3;
+    box-sizing: border-box;
+}
+
+/*头部部分*/
+div.product header {
+    width: 100%;
+    /*margin-bottom: 6.43rem;*/
+}
+div.product header::before {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+    height: 3.75rem;
+}
+div.product header h1 {
+    font-size: 1.83rem;
+    height: 4.67rem;
+    line-height: 4.67rem;
+    background-color: #FFFFFF;
+    color: #777777;
+}
+div.product header h1 i {
+    margin: 0 1rem;
+}
+
+/*主体部分*/
+div.product main .top a {
+    text-decoration: none;
+    color: #777;
+}
+div.product main .top a section:first-child {
+    width: 100%;
+    height: 26.6rem;
+}
+div.product main .top a section:first-child img {
+    width: 100%;
+}
+div.product main .top a section:last-child {
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    background-color: #fff;
+    text-align: center;
+}
+div.product main .bottom {
+    width: 100%;
+    background-color:#fafafa;
+    /*border: 1px solid red;*/
+    padding-top: 2rem;
+    margin-bottom: 3.33rem;
+
+}
+div.product main .bottom ul {
+    margin-left: 2rem;
+    padding-bottom: 2.5rem;
+    /*border: 1px solid blue;*/
+}
+div.product main .bottom li {
+    display: inline-block;
+    background-color: #fff;
+    margin: 0 .83rem .83rem 0;
+    padding: .83rem 1rem;
+}
+div.product main .bottom a {
+    text-decoration: none;
+    color: #777;
+}
+
+/*页脚部分*/
+footer {
+    width: 100%;
+    font-size: 2.33rem;
+    text-align: right;
+}
+footer i.fa-angle-up {
+    margin:2.25rem  2.5rem 4.16rem 0;
+    color: #777;
+}

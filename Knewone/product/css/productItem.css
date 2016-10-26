@@ -1,0 +1,161 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 75%;
+}
+body {
+    width: 100%;
+    background-color: #ebeced;
+    border: 1px solid #e2e2e3;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'KnewOne-Icon';
+    src: url("../font-awesome-4.6.3/fonts/KnewOne-Icon.woff") format("truetype");
+}
+/*头部部分*/
+div.productItem header ul {
+    list-style: none;
+    overflow: hidden;
+}
+div.productItem header::before {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+    height: 3.75rem;
+}
+div.productItem header ul li {
+    float:left;
+    padding: 2.08rem 0 1.56rem 1.42rem;
+}
+div.productItem header ul li a {
+    text-decoration: none;
+    color: #777;
+    font-size: 1.5rem;
+}
+div.productItem header ul li.dy::before {
+    content: "\e614";
+    font-family: 'KnewOne-Icon';
+    font-size: 1.66rem;
+    color: #777;
+}
+
+/*介绍部分*/
+div.productItem article {
+    width: 100%;
+    background-color: #fafafa;
+    padding-top: 1.66rem;
+}
+div.productItem article h3 {
+    margin: 0 0 1rem 1.66rem;
+    color: #777;
+    font-size: 1.25rem;
+}
+div.productItem article h3 span {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+div.productItem article>ul {
+    margin-left: 1.66rem;
+    color: #47b2e2;
+    list-style-position: inside;
+}
+div.productItem article>ul li::before {
+    content: " ";
+    display: inline-block;
+    /*width: .8rem;*/
+}
+div.productItem article>ul li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+div.productItem article>ul li a {
+    color: #47b2e2;
+    line-height: 2.33rem;
+    text-decoration: none;
+}
+div.productItem article .list {
+    padding: 3rem 0 1.5rem 0;
+}
+div.productItem article .list ul {
+    list-style: none;
+    overflow: hidden;
+    margin-left: 1.88rem;
+}
+div.productItem article .list ul li {
+    float: left;
+    padding: .83rem 1.66rem;
+    border: 1px solid #f4f4f4;
+    margin: 0 .86rem .66rem 0;
+}
+div.productItem article .list ul li a {
+    text-decoration: none;
+    color: #777;
+}
+
+/*主体部分*/
+div.productItem main>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    /*height: 6.66rem;
+    line-height: 6.66rem;*/
+}
+div.productItem main>ul li {
+    /*border: 1px solid blue;*/
+    padding: .92rem 1.08rem;
+    margin: 1.66rem 3.33rem;
+}
+div.productItem main>ul li a {
+    text-decoration: none;
+    color: #777;
+}
+div.productItem main .container section:first-of-type {
+    width: 100%;
+    height: 23.4rem;
+}
+div.productItem main .container {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1.66rem;
+    background-color: #fff;
+}
+div.productItem main .container section:first-of-type img {
+    width: 100%;
+}
+div.productItem main .container h4 {
+    font-size: 1.16rem;
+    height: 1.66rem;
+    padding: 1.66rem  1.16rem;
+}
+div.productItem main .container h4 a {
+    text-decoration: none;
+    color: #333;
+}
+div.productItem main .container section:nth-of-type(2) {
+    float: left;
+    margin: .6rem 0 1.16rem 1.16rem;
+    color: #b29f99;
+}
+div.productItem main .container section:last-of-type {
+    float: right;
+    margin-right: 1.25rem;
+
+}
+div.productItem main .container section:last-of-type i.fa-heart-o {
+    color: #fd5a46;
+    font-size: 1.75rem;
+}
+div.productItem main .container section:last-of-type span {
+    font-size: .75rem;
+    color: #fd5a46;
+    margin: 0 1.25rem 0 .33rem;
+}
+div.productItem main .container section:last-of-type i.fa-list-ul {
+    color: #ef8a61;
+    font-size: 1.58rem;
+}
